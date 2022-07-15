@@ -14,7 +14,6 @@ public class MyArray {
         TreeMap<Object, Object> objectObjectTreeMap = new TreeMap<>();
         objectObjectTreeMap.put(1, 1);
 
-
     }
 
     private static void arrList() {

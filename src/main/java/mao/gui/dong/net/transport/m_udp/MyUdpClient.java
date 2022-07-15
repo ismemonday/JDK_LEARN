@@ -11,8 +11,8 @@ import java.net.InetSocketAddress;
  */
 public class MyUdpClient {
     public static void main(String[] args) throws IOException {
-        DatagramSocket datagramSocket = new DatagramSocket(8888);
-        DatagramPacket datagramPacket = new DatagramPacket("hello is me udp client".getBytes(), 10, new InetSocketAddress("127.0.0.1", 6666));
+        DatagramSocket datagramSocket = new DatagramSocket(6000);
+        DatagramPacket datagramPacket = new DatagramPacket("hello is me udp client".getBytes(), 10, new InetSocketAddress("10.10.68.72", 6000));
         while (true){
             try {
                 Thread.sleep(1000);

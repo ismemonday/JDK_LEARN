@@ -1,0 +1,73 @@
+@startuml
+abstract ModbusMaster{
+    ModbusConnection conn
+    BroadcastResponse broadcastResponse
+
+    void sendRequest(ModbusMessage msg)
+    ModbusResponse processRequest(ModbusRequest request)
+}
+interface FrameEventListenerList{
+        void addListener(FrameEventListener listener);
+
+        void removeListener(FrameEventListener listener);
+
+        void removeListeners();
+
+        void fireFrameReceivedEvent(FrameEvent event);
+
+        void fireFrameSentEvent(FrameEvent event);
+
+        int countListeners();
+}
+abstract ModbusConnection{
+    LoggingOutputStream getOutputStream()
+    LoggingInputStream getInputStream();
+    ModbusTransport getTransport();
+}
+class FrameEventListenerListImpl
+abstract ModbusTransport{
+     LoggingInputStream is
+     LoggingOutputStream os
+
+     ModbusMessage read(ModbusMessageFactory factory)
+     void sendImpl(ModbusMessage msg)
+}
+class BroadcastResponse extends ModbusResponse{
+}
+class LoggingInputStream{
+    FrameEventListenerList listenerList
+    ByteFifo fifo
+}
+class LoggingOutputStream
+abstract ModbusOutputStream
+abstract ModbusInputStream{
+    void setReadTimeout(int readTimeout);
+}
+interface OutputStream
+interface InputStream
+
+abstract class ModbusResponse extends ModbusMessage {
+     void readResponse(ModbusInputStream fifo)
+     void writeResponse(ModbusOutputStream fifo)
+}
+abstract class ModbusMessage {
+    void readPDU(ModbusInputStream fifo)
+    void writePDU(ModbusOutputStream fifo)
+}
+
+abstract  class ModbusRequest extends ModbusMessage implements ModbusMessageFactory{
+}
+FrameEventListenerList <|.. ModbusMaster
+FrameEventListenerList <|.. FrameEventListenerListImpl
+FrameEventListenerListImpl<|--ModbusConnection
+ModbusMaster --> ModbusConnection
+ModbusMaster --> BroadcastResponse
+OutputStream <|.. ModbusOutputStream
+ModbusOutputStream <|-- LoggingOutputStream
+InputStream <|.. ModbusInputStream
+ModbusInputStream <|-- LoggingInputStream
+ModbusConnection-->ModbusTransport
+ModbusTransport -->LoggingInputStream
+ModbusTransport -->LoggingOutputStream
+ModbusMaster -->ModbusRequest
+@enduml

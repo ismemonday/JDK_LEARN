@@ -2,6 +2,7 @@ package mao.gui.dong.juc;
 
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
+import java.util.concurrent.locks.LockSupport;
 
 /**
  * @author mgd [maoguidong@standard-robots.com]
@@ -15,5 +16,7 @@ public class FutureTest {
         });
         futureTask.run();
         System.out.println(futureTask.get());
+        LockSupport.park(Integer.valueOf(1));
+        LockSupport.park();
     }
 }

@@ -39,7 +39,8 @@ class EpollServer{
         selector = provider.openSelector();
         ssc.configureBlocking(false);
         ssc.bind(new InetSocketAddress(8888));
-        ssc.register(selector, SelectionKey.OP_ACCEPT);
+        ssc.register(selector, 0);
+
         while (true){
             Set<SelectionKey> keys = selector.keys();
             System.out.println("当前epoll注册的事件：" + keys.size());

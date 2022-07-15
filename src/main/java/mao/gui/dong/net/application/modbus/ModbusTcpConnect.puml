@@ -1,0 +1,36 @@
+@startuml
+class ByteFifo{
+    final private ByteArrayOutputStream baos;
+    final private ByteArrayInputStream bais;
+    final private int capacity;
+
+    void write(byte[] b)
+    byte[] toByteArray()
+}
+
+abstract class ModbusOutputStream extends OutputStream {
+    ByteFifo fifo
+}
+
+class LoggingOutputStream extends ModbusOutputStream{}
+
+abstract class ModbusTransport{
+     private LoggingInputStream is;
+     private LoggingOutputStream os;
+     void send(ModbusMessage msg);
+     void sendImpl(ModbusMessage msg)
+}
+
+class ModbusTransportTCP extends ModbusTransport{
+ void sendImpl(ModbusMessage msg)
+}
+
+class TcpAduHeader {
+     byte[] buffer;
+     write(ModbusOutputStream fifo)
+}
+
+ModbusTransport-->LoggingOutputStream
+ModbusOutputStream-->ByteFifo
+ModbusTransportTCP-->TcpAduHeader
+@enduml

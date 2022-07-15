@@ -16,7 +16,7 @@ public class NettySource {
     public static void main(String[] args) throws Exception {
         ServerBootstrap bootStrap = new ServerBootstrap();
         bootStrap.
-                group(new NioEventLoopGroup(1),new NioEventLoopGroup()).
+                group(new NioEventLoopGroup(2),new NioEventLoopGroup()).
                 channel(NioServerSocketChannel.class).
                 childHandler(new ChannelInitializer<SocketChannel>() {
                     @Override
@@ -25,10 +25,14 @@ public class NettySource {
                         ch.pipeline().addLast(new MyChannelHandler2());
                     }
                 });
-        ChannelFuture f1 = bootStrap.bind(8080).sync();
-        ChannelFuture f2 = bootStrap.bind(8081).sync();
-        f1.channel().closeFuture().sync();
-        f2.channel().closeFuture().sync();
+        ChannelFuture f1 = bootStrap.bind(8080);
 
+
+    }
+}
+
+class PassTest{
+    public static void main(String[] args) {
+        new Thread().start();
     }
 }

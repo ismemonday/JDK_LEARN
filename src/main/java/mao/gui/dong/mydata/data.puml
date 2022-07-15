@@ -1,0 +1,38 @@
+@startuml
+'集合
+
+interface Queue<E> extends Collection{
+FIFO-先入先出
+}
+interface List<E> extends Collection{
+可重复
+}
+interface Set<E> extends Collection{
+不重复
+}
+interface Deque<E> extends Queue{
+双向队列
+}
+'list
+class CopyOnWriteArrayList<E> implements List
+class ArrayList<E>  implements List
+class LinkedList<E> implements List
+class Stack<E> extends Vector
+class Vector<E> implements List
+class HashSet<E> extends AbstractSet
+class TreeSet<E> extends AbstractSet
+abstract class AbstractSet<E>  implements Set
+class CopyOnWriteArraySet<E> extends AbstractSet
+class EmptySet<E> extends AbstractSet
+class ConcurrentSkipListSet<E> extends AbstractSet
+abstract class EnumSet<E extends Enum<E>> extends AbstractSet
+class JumboEnumSet<E extends Enum<E>> extends EnumSet
+class LinkedHashSet<E> extends HashSet
+'map
+interface Map<K, V>
+abstract class AbstractMap<K,V> implements Map
+class HashMap<K,V> extends AbstractMap
+class TreeMap<K,V> extends AbstractMap
+class Hashtable<K,V> implements Map
+class ConcurrentHashMap<K,V> extends AbstractMap
+@enduml

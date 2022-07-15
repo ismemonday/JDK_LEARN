@@ -1,6 +1,7 @@
 package mao.gui.dong.queue;
 
 import java.util.concurrent.DelayQueue;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author mgd [maoguidong@standard-robots.com]
@@ -11,7 +12,7 @@ public class DelayQueueTest {
         DelayQueue<Order> orders = new DelayQueue<>();
         for (int i = 0; i < 5; i++) {
             try {
-                Thread.sleep(2000);
+                Thread.sleep(1000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -19,7 +20,12 @@ public class DelayQueueTest {
         }
         System.out.println("数据填充完成");
         for (;orders.size()>0;){
-            Order poll = orders.poll();
+            Order poll = null;
+            try {
+                poll = orders.poll(2, TimeUnit.SECONDS);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             if(poll!=null){
                 System.out.println(poll.getName());
             }

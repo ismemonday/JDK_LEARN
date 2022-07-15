@@ -74,8 +74,8 @@ public class ThreadPool implements Executor {
 
 
     public static void main(String[] args) {
-        //standardPoolTest();
-        myStandardPoolTest();
+        standardPoolTest();
+        //myStandardPoolTest();
 
     }
 
@@ -120,6 +120,12 @@ public class ThreadPool implements Executor {
                 System.out.println(Thread.currentThread().getName()+"线程执行"+tem);
             });
         }
+        try {
+            Thread.sleep(100000000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println("主线程执行完了");
     }
 
     private final class Worker implements Runnable{

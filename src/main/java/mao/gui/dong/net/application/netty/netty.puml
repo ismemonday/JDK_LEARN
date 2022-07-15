@@ -1,0 +1,35 @@
+@startuml
+class NioEventLoopGroup extends MultithreadEventLoopGroup
+abstract class MultithreadEventLoopGroup extends MultithreadEventExecutorGroup implements EventLoopGroup
+abstract class MultithreadEventExecutorGroup extends AbstractEventExecutorGroup
+abstract class AbstractEventExecutorGroup implements EventExecutorGroup
+
+
+
+
+
+
+
+
+'MultithreadEventLoopGroup//////////////////////////////////
+class NioEventLoop extends SingleThreadEventLoop
+abstract class SingleThreadEventLoop extends SingleThreadEventExecutor implements EventLoop{
+    private final Queue<Runnable> tailTasks;
+}
+abstract class SingleThreadEventExecutor extends AbstractScheduledEventExecutor implements OrderedEventExecutor
+interface EventLoop extends OrderedEventExecutor, EventLoopGroup
+abstract class AbstractScheduledEventExecutor extends AbstractEventExecutor
+abstract class AbstractEventExecutor extends AbstractExecutorService implements EventExecutor
+interface OrderedEventExecutor extends EventExecutor
+interface EventExecutor extends EventExecutorGroup
+interface EventExecutorGroup extends ScheduledExecutorService,Iterable{
+
+}
+interface EventLoopGroup extends EventExecutorGroup
+class AbstractExecutorService implements ExecutorService{
+    JDK
+}
+interface ScheduledExecutorService extends ExecutorService{
+    JDK
+}
+@enduml

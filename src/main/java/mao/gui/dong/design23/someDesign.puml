@@ -1,0 +1,13 @@
+@startuml
+class OutputStreamTCP extends LoggingOutputStream{
+
+}
+class LoggingOutputStream extends ModbusOutputStream{
+     final private ModbusOutputStream out;
+
+     LoggingOutputStream(ModbusOutputStream out)
+}
+
+abstract class ModbusOutputStream extends OutputStream{}
+
+@enduml

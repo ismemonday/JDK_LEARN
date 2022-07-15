@@ -15,7 +15,7 @@ public class MyChannelHandler extends ChannelInboundHandlerAdapter {
     public void channelRead(ChannelHandlerContext ctx,Object msg) throws Exception {
         ByteBuf buf= (ByteBuf) msg;
         System.out.println("收到客户端:"+ctx.channel().remoteAddress()+"的消息:" + buf.toString(Charset.defaultCharset()));
-        ctx.fireChannelRead(msg);
+        //ctx.fireChannelRead(msg);
         ctx.writeAndFlush(msg);
     }
 

@@ -70,6 +70,8 @@ dependencies {
 
 // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.13.3'
+// https://mvnrepository.com/artifact/org.apache.plc4x/plc4j-driver-modbus
+    implementation group: 'io.github.flyingdew', name: 'jlibmodbus', version: '1.2.9.7'
 
 
 }
