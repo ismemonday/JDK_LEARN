@@ -1,0 +1,64 @@
+@startuml
+interface Queue<E>{
+    boolean add(E e);//添加
+    boolean offer(E e);//添加
+    E remove();//删除
+    E poll();//获取第一个,并删除,没有返回null
+    E element();//获取第一个,不删除,没有抛异常
+    E peek();//获取第一个,不删除,没有返回null
+}
+class 阻塞队列 extends Queue
+
+class 非阻塞队列 extends Queue
+
+interface BlockingQueue<E> extends 阻塞队列{
+     void put(E e) throws InterruptedException;//阻塞添加
+     E take() throws InterruptedException;//阻塞获取第一个,并删除
+}
+
+class ArrayBlockingQueue<E> implements BlockingQueue{
+    由数组结构组成的有界阻塞队列
+}
+class LinkedBlockingQueue<E> implements BlockingQueue{
+    由链表结构组成的有界（但是默认大小 Integer.MAX_VALUE）
+    的阻塞队列有界，但是界限非常大，相当于无界，可以当成无界
+}
+class PriorityBlockQueue<E> implements BlockingQueue{
+    支持优先级排序的无界阻塞队列
+}
+class DelayQueue<E> implements BlockingQueue{
+    使用优先级队列实现的延迟无界阻塞队列
+}
+class SynchronousQueue<E> implements BlockingQueue{
+    不存储元素的阻塞队列，也即单个元素的队列,
+    生产一个，消费一个，不存储元素，不消费不生产
+}
+class LinkedTransferQueue<E> implements BlockingQueue{
+    由链表结构组成的无界阻塞队列
+}
+class LinkedBlockingDeque<E> implements BlockingQueue{
+    由链表结构组成的双向阻塞队列
+}
+
+class LinkedList extends 非阻塞队列{
+    是双相链表结构，
+    在添加和删除元素时具有比ArrayList更好的性能。
+    但在 Get 与 Set 方面弱于ArrayList。
+    当然，这些对比都是指数据量很大或者操作很频繁的情况下的对比。
+}
+
+class PriorityQueue extends 非阻塞队列{
+    PriorityQueue维护了一个有序列表，
+    存储到队列中的元素会按照自然顺序排列。
+    当然，我们也可以给它指定一个实现了 java.util.Comparator
+    接口的排序类来指定元素排列的顺序
+}
+
+class ConcurrentLinkedQueue extends 非阻塞队列{
+    是基于链接节点的并且线程安全的队列。
+    因为它在队列的尾部添加元素并从头部删除它们，
+    所以只要不需要知道队列的大小 ConcurrentLinkedQueue
+     对公共集合的共享访问就可以工作得很好。
+     收集关于队列大小的信息会很慢，需要遍历队列。
+}
+@enduml

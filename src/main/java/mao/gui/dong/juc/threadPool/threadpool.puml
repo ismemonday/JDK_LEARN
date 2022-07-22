@@ -1,0 +1,15 @@
+@startuml
+interface Executor{
+    //执行任务,使用新线程或者已经运行的线程
+    void execute(Runnable command);
+}
+
+interface ExecutorService extends Executor{
+    void shutdown()//等待队列中的继续执行,队列中不再能添加新任务
+    List<Runnable> shutdownNow();//停止所有真正执行的任务,返回awaiting状态的任务
+    boolean awaitTermination(long timeout, TimeUnit unit) throws InterruptedException;//阻塞直到时间到或者线程池terminated
+    <T> Future<T> submit(Callable<T> task);//提供一个任务,并返回future
+    <T> List<Future<T>> invokeAll(Collection<? extends Callable<T>> tasks) throws InterruptedException;//提交一批任务,返回一批任务future
+    <T> T invokeAny(Collection<? extends Callable<T>> tasks) throws InterruptedException, ExecutionException;//提交一批任务,返回一个执行成功的任务结果
+}
+@enduml

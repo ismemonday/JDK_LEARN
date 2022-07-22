@@ -15,7 +15,6 @@ public class RmiServer {
         LocateRegistry.createRegistry(8888);
         Naming.bind("rmi://localhost:8888/user", new UserService());
         Thread.sleep(60000);
-        //Naming.rebind();
         System.out.println("start server port is 8888");
     }
 }

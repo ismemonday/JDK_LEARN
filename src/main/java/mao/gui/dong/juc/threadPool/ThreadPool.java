@@ -1,9 +1,10 @@
-package mao.gui.dong.juc;
+package mao.gui.dong.juc.threadPool;
 
 import lombok.Data;
 
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.locks.LockSupport;
 
 /**
  * @author mgd [maoguidong@standard-robots.com]
@@ -74,9 +75,9 @@ public class ThreadPool implements Executor {
 
 
     public static void main(String[] args) {
-        standardPoolTest();
+        //standardPoolTest();
         //myStandardPoolTest();
-
+        SignalThreadTest();
     }
 
     private static void myStandardPoolTest() {
@@ -126,6 +127,12 @@ public class ThreadPool implements Executor {
             e.printStackTrace();
         }
         System.out.println("主线程执行完了");
+    }
+
+    private  static  void SignalThreadTest(){
+        Executors.newSingleThreadExecutor().execute(()->{
+            LockSupport.park();
+        });
     }
 
     private final class Worker implements Runnable{

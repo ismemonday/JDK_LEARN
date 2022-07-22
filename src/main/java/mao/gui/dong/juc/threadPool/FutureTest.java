@@ -1,4 +1,4 @@
-package mao.gui.dong.juc;
+package mao.gui.dong.juc.threadPool;
 
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
@@ -12,11 +12,11 @@ public class FutureTest {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         FutureTask<Integer> futureTask = new FutureTask<Integer>(()->{
             System.out.println("good");
+            LockSupport.park();
             return 1;
         });
-        futureTask.run();
+        new Thread(futureTask).start();
+        System.out.println(futureTask.isDone());
         System.out.println(futureTask.get());
-        LockSupport.park(Integer.valueOf(1));
-        LockSupport.park();
     }
 }

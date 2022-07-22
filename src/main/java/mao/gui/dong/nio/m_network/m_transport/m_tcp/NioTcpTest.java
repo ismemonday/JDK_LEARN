@@ -23,7 +23,7 @@ public class NioTcpTest {
         //ssc.accept();
         ssc.register(select, SelectionKey.OP_ACCEPT);
         while (true){
-            select.select();
+            select.select(1000);
             Iterator<SelectionKey> iterator = select.selectedKeys().iterator();
             while (iterator.hasNext()){
                 SelectionKey selectionKey = iterator.next();
