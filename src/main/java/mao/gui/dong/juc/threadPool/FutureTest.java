@@ -1,5 +1,6 @@
 package mao.gui.dong.juc.threadPool;
 
+import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 import java.util.concurrent.locks.LockSupport;
@@ -18,5 +19,8 @@ public class FutureTest {
         new Thread(futureTask).start();
         System.out.println(futureTask.isDone());
         System.out.println(futureTask.get());
+        CompletableFuture<Void> voidCompletableFuture = CompletableFuture.runAsync(() -> {
+        });
+
     }
 }

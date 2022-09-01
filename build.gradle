@@ -72,6 +72,17 @@ dependencies {
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.13.3'
 // https://mvnrepository.com/artifact/org.apache.plc4x/plc4j-driver-modbus
     implementation group: 'io.github.flyingdew', name: 'jlibmodbus', version: '1.2.9.7'
+    // https://mvnrepository.com/artifact/org.aspectj/aspectjweaver
+    runtimeOnly group: 'org.aspectj', name: 'aspectjweaver', version: '1.9.9.1'
+    // https://mvnrepository.com/artifact/org.aspectj/aspectjrt
+    runtimeOnly group: 'org.aspectj', name: 'aspectjrt', version: '1.9.9.1'
+// https://mvnrepository.com/artifact/org.openjdk.jol/jol-core
+    // https://mvnrepository.com/artifact/org.openjdk.jol/jol-core
+    implementation group: 'org.openjdk.jol', name: 'jol-core', version: '0.2'
+
+
+
+
 
 
 }

@@ -9,6 +9,7 @@ import java.lang.reflect.Method;
 public class CglibTest {
     public static void main(String[] args) {
         Dog dog1 = new Dog();
+
         //方法拦截
         MethodInterceptor interceptor = new MethodInterceptor() {
             @Override
@@ -17,11 +18,11 @@ public class CglibTest {
                 return proxy.invoke(dog1, args);
             }
         };
-        Enhancer enhancer = new Enhancer();
-        enhancer.setSuperclass(Dog.class);
-        enhancer.setCallback(interceptor);
-        Dog dog = (Dog) enhancer.create();
-        dog.call("hahaha");
 
+        Enhancer enhancer = new Enhancer();
+            enhancer.setSuperclass(Dog.class);
+            enhancer.setCallback(interceptor);
+            Dog dog = (Dog) enhancer.create();
+            dog.call("hahaha");
     }
 }

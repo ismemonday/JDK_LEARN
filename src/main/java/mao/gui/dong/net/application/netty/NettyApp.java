@@ -21,6 +21,7 @@ public class NettyApp {
     public static void main(String[] args) throws InterruptedException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
         ServerBootstrap bootstrap = new ServerBootstrap();
         NioEventLoopGroup bossGroup = new NioEventLoopGroup(1);
+
         NioEventLoopGroup workGroup = new NioEventLoopGroup(1);
 //        bootstrap.channelFactory(new ChannelFactory() {
 //            @Override

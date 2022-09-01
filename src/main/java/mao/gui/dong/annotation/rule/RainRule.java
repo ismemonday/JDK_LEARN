@@ -3,8 +3,6 @@ package mao.gui.dong.annotation.rule;
 import mao.gui.dong.annotation.MyAction;
 import mao.gui.dong.annotation.MyCondition;
 import mao.gui.dong.annotation.Rule;
-import org.springframework.expression.spel.standard.SpelExpression;
-import org.springframework.expression.spel.standard.SpelExpressionParser;
 
 /**
  * @author mgd [maoguidong@standard-robots.com]
@@ -14,9 +12,9 @@ import org.springframework.expression.spel.standard.SpelExpressionParser;
 public class RainRule {
 
     @MyCondition()
-    private boolean condition(MyFact fact){
-        SpelExpression spelExpression = new SpelExpressionParser().parseRaw(fact.getExpress());
-        return spelExpression.compileExpression();
+    private void condition(MyFact fact){
+        //SpelExpression spelExpression = new SpelExpressionParser().parseRaw(fact.getExpress());
+        //return spelExpression.compileExpression();
     }
 
     @MyAction(order=1)

@@ -16,7 +16,7 @@ import java.util.List;
 public class ManTest {
 
     public static void main(String[] args) throws InvocationTargetException, IllegalAccessException {
-      new ManTest().testRule();
+      //new ManTest().testRule();
     }
 
     private void testRule() throws InvocationTargetException, IllegalAccessException {
@@ -50,7 +50,7 @@ public class ManTest {
         if((boolean)conditionMethod.invoke(rainRule, rain)){
             for (Method actionMethod : actionMethods) {
                 actionMethod.setAccessible(true);
-                actionMethod.invoke(rainRule, null);
+                actionMethod.invoke(rainRule, 1);
             }
         }
 

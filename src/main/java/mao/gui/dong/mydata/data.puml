@@ -5,10 +5,10 @@ interface Queue<E> extends Collection{
 FIFO-先入先出
 }
 interface List<E> extends Collection{
-可重复
+有序,可重复
 }
 interface Set<E> extends Collection{
-不重复
+无序,不重复
 }
 interface Deque<E> extends Queue{
 双向队列

@@ -1,4 +1,3 @@
-/*
 package mao.gui.dong.spring.aop.aspectj;
 
 import org.aspectj.lang.annotation.Aspect;
@@ -18,4 +17,3 @@ public class UserDaoAspect {
         System.out.println("前置增强");
     }
 }
-*/

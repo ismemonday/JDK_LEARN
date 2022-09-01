@@ -146,3 +146,1851 @@ class Test{
         System.out.println(Charset.forName("UTF-8").newDecoder().decode(buff).toString());
     }
 }
+
+class NioClient3 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient4 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient5 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient6 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient7 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient8 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient9 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient10 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient11 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient12 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient13 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient14 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient15 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient16 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient17 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient18 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient19 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient20 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient221 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient22 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient23 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient24 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient25 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient26 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient27 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient28 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient29 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient30 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient31 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient32 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient33 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient34 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient35 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient36 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient37 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient38 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient39 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient40 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient41 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient42 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient43 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient44 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient45 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient46 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient47 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient48 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient49 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient50 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient51 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient52 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient58 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient53 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient54 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient55 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient56 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient57 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient5758 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient59 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient620 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient61 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient62 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient63 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient64 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient65 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient66 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient67 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient68 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient69 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient70 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient71 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient72 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient73 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient74 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient75 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient76 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient77 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient78 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient79 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient80 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient81 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient82 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient83 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient84 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient85 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient86 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient87 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient88 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class NioClient89 {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socket = SocketChannel.open(new InetSocketAddress("localhost", 8858));
+        System.out.println("客户端链接上了");
+        //socket.write(ByteBuffer.wrap("hello".getBytes()));
+        ByteBuffer byteBuffer =ByteBuffer.allocate(12000);
+        while (true){
+            try {
+                Thread.sleep(100);
+                socket.isConnected();
+                socket.read(byteBuffer);
+                byteBuffer.flip();
+                System.out.println("数据"+new String(byteBuffer.array(), 0, byteBuffer.position()));
+                byteBuffer.clear();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
